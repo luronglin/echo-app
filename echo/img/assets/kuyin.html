@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <title>
+            js调用java
+        </title>
+    </head>
+
+    <body>
+        <p>
+            <xmp id="show">
+            </xmp>
+        </p>
+        <p>
+            <xmp id="init">
+            </xmp>
+        </p>
+        <p>
+            <input type="button" id="enter" value="退出H5页面" onclick="testClick();"
+            />
+        </p>
+        <p>
+            <input type="button" id="enter1" value="设置导航栏标题" onclick="testClick1();"
+            />
+        </p>
+    </body>
+    <script>
+        function testDiv() {
+            document.getElementById("show").innerHTML = document.getElementsByTagName("html")[0].innerHTML;
+        }
+
+
+        function testClick() {
+            KuYinExt.backToClient()
+        }
+
+        function testClick1() {
+            KuYinExt.setTitle('标题测试')
+        }
+
+    </script>
+
+</html>
